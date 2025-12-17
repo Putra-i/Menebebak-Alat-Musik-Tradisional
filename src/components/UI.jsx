@@ -1,6 +1,7 @@
 import React, { useMemo } from 'react';
 import { useGameStore } from '../store/gameStore';
 import { instruments } from '../data/instruments';
+import bgImage from '../assets/images/background.png';
 import GameScene from './GameScene';
 
 export const StartScreen = () => null; // Skipped
@@ -308,7 +309,7 @@ export const AboutScreen = () => {
             justifyContent: 'flex-start',
             zIndex: 50,
             pointerEvents: 'auto',
-            backgroundImage: 'url("assets/images/background.png")',
+            backgroundImage: `url(${bgImage})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundAttachment: 'fixed'

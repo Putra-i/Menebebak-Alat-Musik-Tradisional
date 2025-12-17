@@ -8,7 +8,7 @@ function App() {
     const currentInstrument = questions[currentQuestionIndex];
     const bgMusicRef = React.useRef(null);
     const [showVolumeSlider, setShowVolumeSlider] = React.useState(false);
-    const [volume, setVolume] = React.useState(0.3);
+    const [volume, setVolume] = React.useState(1.0);
 
     // Control background music based on game state and mode
     React.useEffect(() => {
