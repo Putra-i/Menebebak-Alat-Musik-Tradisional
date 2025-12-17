@@ -73,7 +73,7 @@ function App() {
             {/* Background Music */}
             <audio
                 ref={bgMusicRef}
-                src="/assets/images/backsound.mp3"
+                src="assets/images/backsound.mp3"
                 autoPlay
                 loop
                 className="hidden"
@@ -91,7 +91,7 @@ function App() {
 
             {/* Volume Control Button - Always visible unless in audio mode */}
             {mode !== 'audio' && (
-                <div 
+                <div
                     className="absolute pointer-events-auto"
                     style={{
                         top: '39rem',
@@ -123,7 +123,7 @@ function App() {
                         onMouseLeave={(e) => e.target.style.backgroundColor = 'rgba(255, 255, 255, 0.8)'}
                     >
                         <img
-                            src="/assets/images/volume.png"
+                            src="assets/images/volume.png"
                             alt="Volume"
                             style={{ width: '40px', height: '40px', objectFit: 'contain' }}
                         />

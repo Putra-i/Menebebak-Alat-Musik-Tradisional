@@ -80,14 +80,14 @@ export const GameScreen = ({ children }) => {
                     transition: 'all 0.2s',
                     boxShadow: '0 4px 12px rgba(169, 70, 0, 0.3)'
                 }}
-                onMouseEnter={(e) => {
-                    e.currentTarget.style.backgroundColor = '#8a3a00';
-                    e.currentTarget.style.transform = 'scale(1.05)';
-                }}
-                onMouseLeave={(e) => {
-                    e.currentTarget.style.backgroundColor = '#a94600';
-                    e.currentTarget.style.transform = 'scale(1)';
-                }}
+                    onMouseEnter={(e) => {
+                        e.currentTarget.style.backgroundColor = '#8a3a00';
+                        e.currentTarget.style.transform = 'scale(1.05)';
+                    }}
+                    onMouseLeave={(e) => {
+                        e.currentTarget.style.backgroundColor = '#a94600';
+                        e.currentTarget.style.transform = 'scale(1)';
+                    }}
                 >
                     BACK
                 </button>
@@ -308,7 +308,7 @@ export const AboutScreen = () => {
             justifyContent: 'flex-start',
             zIndex: 50,
             pointerEvents: 'auto',
-            backgroundImage: 'url("/assets/images/background.png")',
+            backgroundImage: 'url("assets/images/background.png")',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundAttachment: 'fixed'
@@ -334,22 +334,22 @@ export const AboutScreen = () => {
                 boxShadow: '0 4px 12px rgba(169, 70, 0, 0.3)',
                 zIndex: 51
             }}
-            onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = '#8a3a00';
-                e.currentTarget.style.transform = 'scale(1.05)';
-            }}
-            onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundColor = '#a94600';
-                e.currentTarget.style.transform = 'scale(1)';
-            }}
+                onMouseEnter={(e) => {
+                    e.currentTarget.style.backgroundColor = '#8a3a00';
+                    e.currentTarget.style.transform = 'scale(1.05)';
+                }}
+                onMouseLeave={(e) => {
+                    e.currentTarget.style.backgroundColor = '#a94600';
+                    e.currentTarget.style.transform = 'scale(1)';
+                }}
             >
                 BACK
             </button>
 
             {/* Content */}
-            <div style={{ 
-                width: '100%', 
-                maxWidth: '700px', 
+            <div style={{
+                width: '100%',
+                maxWidth: '700px',
                 textAlign: 'center',
                 padding: '4rem 3rem 2rem 3rem'
             }}>
